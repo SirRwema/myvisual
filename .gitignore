@@ -1,0 +1,5 @@
+__pycache__
+venv
+requirements.txt
+voilent.csv
+.DS_Store

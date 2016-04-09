@@ -1,9 +1,9 @@
-d3.queue()
+queue()
     .defer(d3.json, "/uganda/report")
-    .defer(d3.json, "static/geojson/uganda_districts_2011_005.json")
+    .defer(d3.json, "static/geojson/uganda_districts.json")
     .await(makeGraphs);
 
-function makeGraphs(error, fatalincidentsJson, DNameJson) {
+function makeGraphs(error, fatalincidentsJson, districtsJson) {
 	
 	//Clean projectsJson data
 	var ugandaReport = fatalincidentsJson;
